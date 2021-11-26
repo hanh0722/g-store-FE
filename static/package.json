@@ -1,0 +1,21 @@
+{
+  "name": "g-store-fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-ts": "tsc",
+    "dev-ts-watch": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fullpage.js": "^3.1.2"
+  },
+  "devDependencies": {
+    "@types/fullpage.js": "^2.9.3"
+  }
+}

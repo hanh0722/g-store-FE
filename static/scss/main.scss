@@ -1,0 +1,15 @@
+@import '../theme/inherit';
+
+button{
+    padding: var(--button-primary);
+    border: none;
+    border-image: var(--button-image) repeat repeat;
+    outline: none;
+    background: var(--button-color);
+    border-radius: 100px;
+    color: var(--white);
+    font-size: var(--n-fs);
+    text-transform: uppercase;
+    color: var(--white);
+    line-height: 16px;
+}

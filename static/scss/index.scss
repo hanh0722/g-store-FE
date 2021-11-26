@@ -1,0 +1,94 @@
+.section--first{
+    background: var(--light-gray);
+}
+@mixin left-image($bottom) {
+    left: 0;
+    bottom: $bottom;
+}
+.container--landing{
+    .logo--border{
+        img{
+            width: 100%;
+            height: auto;
+        }
+        width: 100px;
+        height: 100px;
+        border: var(--border-size);
+        border-image-source: var(--border-logo);
+    }
+    .left--landing{
+        h1{
+            font-size: var(--g-heading);
+            color: var(--green);
+            text-transform: uppercase;
+            font-weight: var(--weight-900);
+            line-height: 95px;
+            padding-top: var(--g-33);
+            padding-bottom: var(--g-14);
+        }
+        line-height: var(--line-height-primary);
+        h4{
+            font-weight: var(--weight-700);
+            font-size: 35px;
+            padding-bottom: 14px;
+            &:last-child{
+                padding-bottom: 0;
+            }
+            margin-bottom: 0;
+        }
+        z-index: 100;
+    }
+    .image--landing{
+        img{
+            width: 100%;
+            height: auto;
+            z-index: 100;
+            position: relative;
+        }
+        position: relative;
+        .span--elip{
+            min-width: 320px;
+            min-height: 320px;
+            background: var(--yellow-light);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            z-index: 20;
+        }
+        &::before{
+            content: '';
+            top: -100px;
+            left: -100px;
+            bottom: -100px;
+            right: -100px;
+            background: #FFFBF1;
+            border-radius: 50%;
+            position: absolute;
+        }
+        &::after{
+            content: '';
+            top: -20px;
+            left: -20px;
+            bottom: -20px;
+            right: -20px;
+            position: absolute;
+            background: #FFF4DB;
+            border-radius: 50%;
+        }
+    }
+
+    button{
+        font-weight: var(--weight-700);
+        img{
+            margin-left: var(--g-22);
+        }
+        margin-top: var(--g-space);
+    }
+    .left-image{
+        width: 49px !important;
+        height: 66px !important;
+        @include left-image(0);
+    }
+}

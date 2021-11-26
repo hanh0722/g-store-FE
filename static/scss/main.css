@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --red: #EA3C71;
+  --blue: #4FC6EB;
+  --green: #3FBA95;
+  --yellow: #EFBB45;
+  --white: #fff;
+  --rating: #F3CD03;
+  --yellow-light: #FADEA0;
+  --light-gray: #FFFBF1;
+  --line-height-primary: 52px;
+  --line-height-secondary: 30px;
+  --primary-header: #494949;
+  --primary-green: #249A77;
+  --secondary-green: #79CCB3;
+  --button-primary: 19px 40px;
+  --border-image: linear-gradient(90deg, var(--red) -2.78%, var(--yellow) 33.86%, var(--blue) 65.33%, var(--green) 103.7%);
+  --button-color: linear-gradient(90deg, #10B684 0%, #41C79E 101.11%);
+  --border-logo: linear-gradient(90deg, #EA3C71 -2.78%, #EFBB45 33.86%, #4FC6EB 65.33%, #3FBA95 103.7%);
+  --border-size: 2px solid;
+  --weight-700: 700;
+  --weight-800: 800;
+  --weight-900: 900;
+  --weight-bold: bold;
+  --n-fs: 16px;
+  --s-fs: 14px;
+  --primary-size: 40px;
+  --secondary-size: 25px;
+  --primary-header-size: 60px;
+  --basic-size: 14px;
+  --g-space: 58px;
+  --g-heading: 90px;
+  --g-33: 33px;
+  --g-14: 14px;
+  --g-heading-secondary: 40px;
+  --g-22: 22px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  padding: var(--button-primary);
+  border: none;
+  -o-border-image: var(--button-image) repeat repeat;
+     border-image: var(--button-image) repeat repeat;
+  outline: none;
+  background: var(--button-color);
+  border-radius: 100px;
+  color: var(--white);
+  font-size: var(--n-fs);
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 16px;
+}
+/*# sourceMappingURL=main.css.map */
